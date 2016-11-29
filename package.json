@@ -1,7 +1,7 @@
 {
   "name": "angular-petfinder-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "You're going to making a single page web application with Angular and the PetFinder data API.",
   "main": "index.js",
   "scripts": {
     "start": "node server/app.js",
@@ -10,7 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9",
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  }
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "pg": "^6.1.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airwolff/petfinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/airwolff/petfinder/issues"
+  },
+  "homepage": "https://github.com/airwolff/petfinder#readme"
 }

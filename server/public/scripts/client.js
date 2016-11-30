@@ -1,12 +1,12 @@
 var app = angular.module('app', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/dogs', {
+        .when('/dog', {
             templateUrl: '/views/templates/dog.html',
             controller: 'DogController',
             controllerAs: 'dog',
         })
-        .when('/cats', {
+        .when('/cat', {
             templateUrl: '/views/templates/cat.html',
             controller: 'CatController',
             controllerAs: 'cat',
@@ -16,4 +16,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'BarnController',
             controllerAs: 'barn',
         })
+        .otherwise({
+      redirectTo: 'dog'
+});
 }, ]);
